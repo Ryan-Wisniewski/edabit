@@ -15,6 +15,8 @@
 # # simon_says([1, 2, 3, 4, 5], [0, 1, 2, 3, 4])
 # simon_says([1, 2, 3, 4, 5], [5, 5, 1, 2, 3])
 
+
+
 # def can_alternate(s):
 # 	#takes a binary string and sees if it can split the 0's and 1's evenly
 #     counter_x = 0
@@ -45,14 +47,63 @@
 # # can_alternate("101")
 # # can_alternate("000")
 
-def name_shuffle(txt):
-	#replaces first with last name
-    x = txt.split(' ')
-    newStr = f'{x[1]} {x[0]}'
-    print(type(txt))
-    # print(newStr)
 
-name_shuffle("Donald Trump")
-name_shuffle("Rosie O'Donnell")
-name_shuffle("Seymour Butts")
 
+
+# def name_shuffle(txt):
+# 	#replaces first with last name
+#     x = txt.split(' ')
+#     newStr = f'{x[1]} {x[0]}'
+#     # print(newStr)
+
+# name_shuffle("Donald Trump")
+# name_shuffle("Rosie O'Donnell")
+# name_shuffle("Seymour Butts")
+
+
+
+##Solution 1
+# def filter_list(l):
+#     #filters anything not an int
+#     for x in l:
+#         # print(type(x))
+#         if type(x) == int:
+#             print(x)
+
+## NW NW
+# def filter_list(l):
+#     x = [type(x) == int for x in l]
+#     print(x)
+
+# filter_list([1, 2, 3, "x", "y", 10])
+# filter_list([1, "a", 2, "b", 3, "c"])
+
+
+
+# import datetime
+# def time_for_milk_and_cookies(date):
+#     if date.month == 12 and date.day == 24:
+#         return True
+#     print(date.month)
+
+# time_for_milk_and_cookies(datetime.date(2013, 12, 24))
+# time_for_milk_and_cookies(datetime.date(2013, 1, 23))
+
+
+def XO(txt):
+    counter_x = 0
+    counter_y = 0
+    for i in txt:
+        print(i)
+        if i == 'x' or i == 'X':
+            counter_x += 1
+            print('x', counter_x)
+        elif i == 'o' or i == 'O':
+            counter_y += 1
+            print('y', counter_y)
+    if counter_x == counter_y:
+        # print('t')
+        return True
+    else: return False
+XO("ooxx")
+# XO("xooxx")
