@@ -90,20 +90,31 @@
 # time_for_milk_and_cookies(datetime.date(2013, 1, 23))
 
 
-def XO(txt):
-    counter_x = 0
-    counter_y = 0
-    for i in txt:
-        print(i)
-        if i == 'x' or i == 'X':
-            counter_x += 1
-            print('x', counter_x)
-        elif i == 'o' or i == 'O':
-            counter_y += 1
-            print('y', counter_y)
-    if counter_x == counter_y:
-        # print('t')
-        return True
-    else: return False
-XO("ooxx")
+# def XO(txt):
+#     counter_x = 0
+#     counter_y = 0
+#     for i in txt:
+#         print(i)
+#         if i == 'x' or i == 'X':
+#             counter_x += 1
+#             print('x', counter_x)
+#         elif i == 'o' or i == 'O':
+#             counter_y += 1
+#             print('y', counter_y)
+#     if counter_x == counter_y:
+#         # print('t')
+#         return True
+#     else: return False
+# XO("ooxx")
 # XO("xooxx")
+
+
+def double_char(txt):
+    newStr = ''
+    x = [i * 2 for i in txt]
+    # print(x)
+    print(newStr.join(x))
+    # print('plswork', newStr.join(x))
+
+double_char("String")
+# double_char("Hello World!")
