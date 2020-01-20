@@ -234,11 +234,27 @@
 # 			print(ans)
 # print(is_stretched("pppaaannndddaaa", "panda"))
 
-def find_even_nums(num):
-	ans = []
-	for x in range(1, num + 1):
-		if x % 2 == False:
-			ans.append(x)
-	return ans
+# def find_even_nums(num):
+# 	ans = []
+# 	for x in range(1, num + 1):
+# 		if x % 2 == False:
+# 			ans.append(x)
+# 	return ans
 
-find_even_nums(8)
+# find_even_nums(8)
+
+
+# import math
+# def cone_volume(h, r):
+# 	v = math.pi * (r ** 2) * (h/3)
+# 	return round(v, 2)
+
+# cone_volume(3, 2)
+
+def binary(decimal):
+	x = bin(decimal)
+
+	print(x[2:])
+	return x[2:]
+
+binary(123)
