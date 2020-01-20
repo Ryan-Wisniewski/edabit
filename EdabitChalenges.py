@@ -156,9 +156,25 @@
 # 		return 1 + length(txt[1:])
 # print(length('poop'))
 
-print([x * 2 for x in range(0, 20)])
+# print([x * 2 for x in range(0, 20)])
+
+# def unique_sort(lst):
+# 	new_list = list(dict.fromkeys(lst))
+# 	ordered_list = sorted(new_list)
+# 	return ordered_list
+
+# print(unique_sort([1, 4, 4, 4, 4, 4, 3, 2, 1, 2]))
 
 
+def filter_list(lst):
+	array = []
+	# print(array)
+	for x in lst:
+		if type(x) == int:
+			array.append(x)
+	print(array)
+	return array
 
+filter_list([1, 2, "a", "b"])
 
 
