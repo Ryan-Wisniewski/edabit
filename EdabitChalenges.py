@@ -199,15 +199,46 @@
 # print(alphabet_soup("hello"))
 
 
-def unique(lst):
-	num = 0
-	for x in lst:
-		if lst.count(x) == 1:
-			print('yayy',x)
-			num = x
-			print('yeet',num)
-	print(x, num)
-	return num
+# def unique(lst):
+# 	num = 0
+# 	for x in lst:
+# 		if lst.count(x) == 1:
+# 			print('yayy',x)
+# 			num = x
+# 			print('yeet',num)
+# 	print(x, num)
+# 	return num
 
-unique([3, 3, 3, 7, 3, 3])
+# unique([3, 3, 3, 7, 3, 3])
 
+
+# def is_stretched(s1, s2):
+# 	new_arr = [x for x in s1]
+# 	ans = []
+# 	print(new_arr)
+# 	for x in range(len(new_arr)):
+# 		print(x, len(new_arr))
+# 		try:
+# 			if new_arr[x] == new_arr[x+1]:
+# 				print('duupHERE0')
+# 				pass
+# 			else:
+# 				ans.append(new_arr[x])
+# 				print(ans)
+# 		except IndexError:
+# 			pass
+# 		if len(s1) -1 == x:
+
+# 			print('sweet')
+# 			ans.append(new_arr[x])
+# 			print(ans)
+# print(is_stretched("pppaaannndddaaa", "panda"))
+
+def find_even_nums(num):
+	ans = []
+	for x in range(1, num + 1):
+		if x % 2 == False:
+			ans.append(x)
+	return ans
+
+find_even_nums(8)
