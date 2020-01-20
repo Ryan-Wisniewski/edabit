@@ -109,12 +109,56 @@
 # XO("xooxx")
 
 
-def double_char(txt):
-    newStr = ''
-    x = [i * 2 for i in txt]
-    # print(x)
-    print(newStr.join(x))
-    # print('plswork', newStr.join(x))
+# def double_char(txt):
+#     newStr = ''
+#     x = [i * 2 for i in txt]
+#     # print(x)
+#     print(newStr.join(x))
+#     # print('plswork', newStr.join(x))
 
-double_char("String")
-# double_char("Hello World!")
+# double_char("String")
+# # double_char("Hello World!")
+
+
+# def length(txt):
+# 	index = 0
+# 	print(index, txt)
+# 	def get_length(txt, index):
+# 		count = index
+# 		print(len(txt), count)
+# 		if len(txt) == 0:
+# 			print('ree',count)
+# 			return count
+# 		else:
+# 			count += 1		
+# 			get_length(txt[:len(txt)-1], count)
+# 		count = index
+# 		print('I hate hoisting in python though', index, count)
+# 		return index
+		
+# 	get_length(txt, index)
+# 	print('index',index)
+
+# def length(txt):
+# 	count = 0
+# 	if count == len(txt):
+# 		return count
+# 	count += 1
+# 	length[count:len(txt)]
+
+#freaking reeee... so it just membe's numbers
+#okay..
+#OHHH derp because thats what its returning. neat now I feels dumb
+# def length(txt):
+# 	if len(txt) == 0:
+# 		return 0
+# 	else:
+# 		return 1 + length(txt[1:])
+# print(length('poop'))
+
+print([x * 2 for x in range(0, 20)])
+
+
+
+
+
