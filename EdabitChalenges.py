@@ -199,3 +199,15 @@
 # print(alphabet_soup("hello"))
 
 
+def unique(lst):
+	num = 0
+	for x in lst:
+		if lst.count(x) == 1:
+			print('yayy',x)
+			num = x
+			print('yeet',num)
+	print(x, num)
+	return num
+
+unique([3, 3, 3, 7, 3, 3])
+
