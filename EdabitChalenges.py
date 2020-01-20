@@ -166,15 +166,36 @@
 # print(unique_sort([1, 4, 4, 4, 4, 4, 3, 2, 1, 2]))
 
 
-def filter_list(lst):
-	array = []
-	# print(array)
-	for x in lst:
-		if type(x) == int:
-			array.append(x)
-	print(array)
-	return array
+# def filter_list(lst):
+# 	array = []
+# 	# print(array)
+# 	for x in lst:
+# 		if type(x) == int:
+# 			array.append(x)
+# 	print(array)
+# 	return array
 
-filter_list([1, 2, "a", "b"])
+# filter_list([1, 2, "a", "b"])
+
+# arr = [x not in lst for x in range(1,10)]
+# def missing_num(lst):
+# 	arr = []
+# 	for x in range (1,11):
+# 		if x in lst:
+# 			print('yeet',x)
+# 			pass
+# 		else:
+# 			arr.append(x)
+# 	print(arr)
+# 	return arr
+
+# missing_num([1, 2, 3, 4, 6, 7, 8, 9, 10])
+
+# ###SORTED works on both letters and numbers lol.
+# def alphabet_soup(txt):
+# 	x = sorted(txt)
+# 	ans = ''.join(x)
+# 	print(ans)
+# print(alphabet_soup("hello"))
 
 
