@@ -251,10 +251,54 @@
 
 # cone_volume(3, 2)
 
-def binary(decimal):
-	x = bin(decimal)
+# def binary(decimal):
+# 	x = bin(decimal)
 
-	print(x[2:])
-	return x[2:]
+# 	print(x[2:])
+# 	return x[2:]
 
-binary(123)
+# binary(123)
+
+
+# import hashlib
+# def get_sha256_hash(txt):
+# 	#nope im far to lazy to not use haslib
+# 	#remember pass by reference vs passing by value.......
+# 	t = txt.encode()
+# 	t = hashlib.sha256(t).hexdigest()
+# 	print(t)
+# 	# print(hashlib.sha256(txt).hexdigest()) <-- This is using the og text even if you manipulate it
+# 	return t
+# get_sha256_hash('ree')
+
+
+# def sum_numbers(n):
+# 	#non recursive
+# 	ans = 0
+# 	## for x in range(1, n + 1):	
+# 	## 	ans += x
+# 	## return ans
+
+# 	# recursive
+# 	if n == 0:
+# 		return n
+# 	else:
+# 		return n + sum_numbers(n-1)
+
+# print(sum_numbers(5))
+
+# def recur_factorial(n):
+#    if n == 1:
+#        return n
+#    else:
+#        return n*recur_factorial(n-1)
+# print(recur_factorial(5))
+
+def counterpartCharCode(char):
+	if char.isupper() == True:
+		return ord(char) + 32
+	elif char.islower() == False:
+		return ord(char) - 32
+	else: return ord(char)
+	
+counterpartCharCode('a')
