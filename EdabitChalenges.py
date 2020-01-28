@@ -294,11 +294,34 @@
 #        return n*recur_factorial(n-1)
 # print(recur_factorial(5))
 
-def counterpartCharCode(char):
-	if char.isupper() == True:
-		return ord(char) + 32
-	elif char.islower() == False:
-		return ord(char) - 32
-	else: return ord(char)
-	
-counterpartCharCode('a')
+# def counterpartCharCode(char):
+# 	if char.isupper() == True:
+# 		return ord(char) + 32
+# 	elif char.islower() == False:
+# 		return ord(char) - 32
+# 	else: return ord(char)
+
+# counterpartCharCode('a')
+import math
+def scale_tip(lst):
+	half = math.floor(len(lst) / 2)
+	lst_left = lst[:half]
+	lst_right = lst[half + 1:]
+	print(lst_left, lst_right)
+	left_check = 0
+	right_check = 0
+	for x in lst_left:
+		left_check += x
+	print(left_check)
+	for x in lst_right:
+		right_check += x
+	print(right_check)
+	if left_check > right_check:
+		print('left')
+		return "left"
+	elif left_check < right_check:
+		print('right')
+		return "right"
+	else:
+		return "balanced"
+scale_tip([1, 2, 3, "I", 4, 0, 0])
